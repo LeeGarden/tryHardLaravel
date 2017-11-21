@@ -59,6 +59,31 @@
                                 </a>
                             </div>
                         </div>
+                        <div class="form-group">
+                            <label for="password" class="col-md-4 control-label">Login with</label>
+                            <div class="col-md-6">
+                                <div class="col-md-12 btn-group">
+                                    <a class="col-md-4 btn btn-info" style="background: #29487d" href="{{ asset('login/facebook') }}">
+                                        <i class="fa fa-facebook" aria-hidden="true"></i> Facebook
+                                    </a>
+                                    <a class="col-md-4 btn btn-danger" href="{{ asset('login/google') }}">
+                                        <i class="fa fa-google-plus" aria-hidden="true"></i> Google+
+                                    </a>
+                                    <a class="col-md-4 btn btn-primary" href="{{ asset('login/twitter') }}">
+                                        <i class="fa fa-twitter" aria-hidden="true"></i> Twitter
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-8 col-md-offset-2">
+                                @if (Session::has('err-msg'))
+                                    <div class="alert alert-danger">
+                                        {{ Session::get('err-msg') }}
+                                    </div>
+                                @endif
+                            </div>
+                        </div>
                     </form>
                 </div>
             </div>

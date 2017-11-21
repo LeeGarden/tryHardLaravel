@@ -34,5 +34,20 @@ return [
         'key' => env('STRIPE_KEY'),
         'secret' => env('STRIPE_SECRET'),
     ],
+    'facebook' => [
+        'client_id' => env('FB_CLIENT_ID'),
+        'client_secret' => env('FB_CLIENT_SECRET'),
+        'redirect' => env('APP_URL').env('FB_REDIRECT'),
+    ],
+    'twitter' => [
+        'client_id' => env('TW_CLIENT_ID'),
+        'client_secret' => env('TW_CLIENT_SECRET'),
+        'redirect' => env('APP_URL').env('TW_REDIRECT'),
+    ],
+    'google' => [
+        'client_id' => env('GG_CLIENT_ID'),
+        'client_secret' => env('GG_CLIENT_SECRET'),
+        'redirect' => env('APP_URL').env('GG_REDIRECT'),
+    ],
 
 ];
